@@ -2,6 +2,10 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "booking-domain": "libs/booking/domain",
+    "booking-feature-search": "libs/booking/feature-search",
+    "booking-feature-upgrade": "libs/booking/feature-upgrade",
+    "shared-ng-ui": "libs/shared-ng/ui",
     "starfleet": "apps/starfleet",
     "starfleet-e2e": "apps/starfleet-e2e"
   }

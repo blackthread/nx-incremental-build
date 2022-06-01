@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@magic-flight/booking/domain": ["libs/booking/domain/src/index.ts"],
+      "@magic-flight/booking/feature-search": [
+        "libs/booking/feature-search/src/index.ts"
+      ],
+      "@magic-flight/booking/feature-upgrade": [
+        "libs/booking/feature-upgrade/src/index.ts"
+      ],
+      "@magic-flight/shared-ng/ui": ["libs/shared-ng/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/booking/feature-upgrade/src",
+  "prefix": "magic-flight",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/booking/feature-upgrade"],
+      "options": {
+        "project": "libs/booking/feature-upgrade/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/booking/feature-upgrade/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/booking/feature-upgrade/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/booking/feature-upgrade"],
+      "options": {
+        "jestConfig": "libs/booking/feature-upgrade/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/booking/feature-upgrade/**/*.ts",
+          "libs/booking/feature-upgrade/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
