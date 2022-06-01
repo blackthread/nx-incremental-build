@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "starfleet": "apps/starfleet",
+    "starfleet-e2e": "apps/starfleet-e2e"
+  }
+}
