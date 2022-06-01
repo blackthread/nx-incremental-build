@@ -1,6 +1,6 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
-/* eslint-disable */
+
 
 @Component({
   selector: 'magic-flight-nx-welcome',
@@ -20,8 +20,5 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styles: [],
   encapsulation: ViewEncapsulation.None,
 })
-export class NxWelcomeComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
+export class NxWelcomeComponent {
 }

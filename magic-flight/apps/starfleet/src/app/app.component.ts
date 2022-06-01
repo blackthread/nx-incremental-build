@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'magic-flight-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  template: `<magic-flight-nx-welcome></magic-flight-nx-welcome>
+
+  <magic-flight-search></magic-flight-search>`
 })
 export class AppComponent {
   title = 'starfleet';
