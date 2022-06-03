@@ -1,0 +1,4 @@
+# Currying
+
+Currying means evaluating functions with multiple arguments and decomposing them into a sequence of functions with a single argument. 
+So, instead of taking all arguments at once, the function takes the first argument and returns a new function
